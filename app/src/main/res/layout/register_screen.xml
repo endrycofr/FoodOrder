@@ -6,8 +6,10 @@
     android:layout_height="match_parent"
     android:background="@color/putihTulang"
     android:orientation="vertical"
-    tools:context=".registerScreen">
-
+    tools:context=".RegisterScreen">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -151,21 +153,22 @@
             android:layout_marginRight="25dp"
             android:layout_marginTop="40dp"
             />
-        <TextView
-            android:id="@+id/textViewlogin"
+        <Button
+            android:id="@+id/buttonLoginHere"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Already have account Login here"
+            android:text="Already have an account? Login here"
             android:textColor="@color/black"
-            android:textSize="16sp"
+            android:textSize="12sp"
+            android:background="@color/transparant"
             android:layout_alignParentBottom="true"
             android:padding="10dp"
             android:layout_centerHorizontal="true"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/buttonregister"
-            android:fontFamily="@font/mediumpop"/>
+            app:layout_constraintTop_toBottomOf="@+id/buttonRegister"
+            android:fontFamily="@font/mediumpop" />
 
     </LinearLayout>
 
@@ -296,4 +299,5 @@
 <!--        app:layout_constraintHorizontal_bias="0.498"-->
 <!--        app:layout_constraintStart_toStartOf="parent"-->
 <!--        app:layout_constraintTop_toBottomOf="@+id/buttonRegister" />-->
+</ScrollView>
 </LinearLayout>

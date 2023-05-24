@@ -5,8 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".loginActivity"
+    tools:context=".LoginActivity"
     android:background="@color/putihTulang">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -107,21 +110,23 @@
         android:layout_marginRight="25dp"
         android:layout_marginTop="30dp"
         android:fontFamily="@font/mediumpop"/>
-<TextView
-    android:id="@+id/textViewNewUser"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Don’t have an account? Sign Up"
-    android:textColor="@color/black"
-    android:textSize="16sp"
-    android:layout_alignParentBottom="true"
-    android:padding="10dp"
-    android:layout_centerHorizontal="true"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.498"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/buttonLogin"
-    android:fontFamily="@font/mediumpop"/>
+    <Button
+        android:id="@+id/buttonSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don’t have an account? Sign Up"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:background="@color/transparant"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin"
+        android:fontFamily="@font/mediumpop" />
+
 </LinearLayout>
 <!--    <EditText-->
 <!--        android:id="@+id/editTextLoginPassword"-->
@@ -214,5 +219,5 @@
 <!--        app:layout_constraintTop_toTopOf="parent"-->
 <!--        android:paddingTop="35dp"-->
 <!--        android:src="@drawable/taxiburger" />-->
-
+    </ScrollView>
 </LinearLayout>

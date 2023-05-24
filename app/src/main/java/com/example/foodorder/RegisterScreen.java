@@ -6,20 +6,17 @@ import android.view.View;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
-    private Button startButton;
-
+public class RegisterScreen extends AppCompatActivity {
+    private Button loginHereButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_getstarted);
-
-        startButton = findViewById(R.id.cardFindget);
-        startButton.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.register_screen);
+        loginHereButton = findViewById(R.id.buttonLoginHere);
+        loginHereButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Create an Intent to navigate to the new page
-                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                Intent intent = new Intent(RegisterScreen.this, LoginActivity.class);
                 startActivity(intent);
             }
         });
