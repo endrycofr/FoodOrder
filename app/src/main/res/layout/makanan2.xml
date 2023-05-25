@@ -86,7 +86,7 @@
                     android:src="@drawable/baseline_min"
                     tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/jumlahPesanan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
@@ -94,7 +94,7 @@
                     android:textColor="@color/black"
                     android:layout_marginStart="16sp"
                     android:layout_marginEnd="16sp"
-                    android:text="1"
+                    android:text="0"
 
                     />
 
