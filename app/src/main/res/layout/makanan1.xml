@@ -13,33 +13,37 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
             android:orientation="vertical">
-            <TextView
-                android:id="@+id/textmakan1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Crabby Patty"
-                android:textAlignment="center"
-                android:textSize="24sp"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:fontFamily="@font/mediumpop"
-                android:layout_marginTop="68dp"
-                />
-            <TextView
-                android:id="@+id/hargatext"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/merah"
-                android:textSize="24sp"
-                android:text="Rp 20.000"
-                android:textAlignment="center"
-                android:layout_marginTop="5dp"
-                />
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+                <ImageButton
+                    android:id="@+id/arrow_right"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@color/transparant"
+                    android:src="@drawable/baseline_keyboard_arrow_right_24"
+                    app:layout_constraintBottom_toTopOf="@+id/menu1"
+                    app:layout_constraintEnd_toEndOf="@+id/menu1"
+                    app:layout_constraintTop_toBottomOf="@+id/menu1"
+                    app:layout_constraintVertical_bias="0.857"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
+                <ImageButton
+                    android:id="@+id/arrow_left"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginEnd="332dp"
+                    android:background="@color/transparant"
+                    android:src="@drawable/baseline_keyboard_arrow_left_24"
+                    app:layout_constraintBottom_toTopOf="@+id/menu1"
+                    app:layout_constraintEnd_toEndOf="@+id/menu1"
+                    app:layout_constraintTop_toBottomOf="@+id/menu1"
+                    app:layout_constraintVertical_bias="0.857"
+                    tools:ignore="SpeakableTextPresentCheck" />
                 <ImageView
                     android:id="@+id/menu1"
                     android:scaleType="centerInside"
@@ -48,25 +52,48 @@
                     app:srcCompat="@drawable/menu1"
                     tools:ignore="MissingConstraints" />
 
-                <ImageButton
-                    android:id="@+id/arrow_right"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:background="@color/transparant"
-                    android:src="@drawable/baseline_arrow_circle_right"
-                    app:layout_constraintBottom_toTopOf="@+id/menu1"
-                    app:layout_constraintEnd_toEndOf="@+id/menu1"
-                    app:layout_constraintTop_toBottomOf="@+id/menu1"
-                    tools:ignore="SpeakableTextPresentCheck" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/deskripsi1"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Crabby Patty"
+                android:textSize="20sp"
+                android:textAlignment="gravity"
+                android:layout_gravity="center"
+                android:fontFamily="@font/boldpop"
+                android:textColor="@color/black"
+                />
 
+            <TextView
+                android:id="@+id/deskripsi2"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/mediumpop"
+                android:text="@string/makan1"
+                android:textAlignment="gravity"
+                android:textColor="@color/abutua"
+                android:textSize="12sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
+                android:layout_marginTop="30dp"
                 android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/hargatext"
+                    android:layout_width="226dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/mediumpop"
+                    android:text="Rp 20.000"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
 
                 <ImageButton
                     android:id="@+id/imagemin"
@@ -96,27 +123,18 @@
                     tools:ignore="SpeakableTextPresentCheck" />
 
             </LinearLayout>
-            <TextView
-                android:id="@+id/deskripsi1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="18dp"
-                android:text="@string/makan1"
-                android:textSize="18sp"
-                android:fontFamily="@font/mediumpop"
-                android:textColor="@color/black"
-               />
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="54dp"
                 android:gravity="center"
                 android:orientation="horizontal"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="15dp">
                 <ImageButton
                     android:id="@+id/keranjang"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:background="@drawable/bg_btn_bunder"
+                    android:background="@drawable/bg_btn_yellow"
                     android:src="@drawable/cart"
                     android:layout_marginEnd="10dp"
                     android:layout_marginStart="60dp"
@@ -124,9 +142,9 @@
 
                 <Button
                     android:id="@+id/checkout"
-                    android:layout_width="150dp"
+                    android:layout_width="262dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/bg_btn_red"
+                    android:background="@drawable/bg_btn_yellow"
                     android:text="add to cart"
                     android:textSize="18sp"
                     android:textColor="@color/white"

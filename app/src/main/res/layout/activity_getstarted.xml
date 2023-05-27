@@ -21,19 +21,20 @@ tools:context=".MainActivity">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome!"
+        android:text="Krusty Krab"
         android:textColor="@color/black"
         android:textSize="42sp"
         android:textStyle="bold"
         android:layout_marginTop="5dp"/>
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="335dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:text="Puaskan Selera Anda dengan Pilihan Makanan Terbaik, Hanya di Aplikasi Kami!."
         android:textAlignment="center"
-        android:textSize="16sp"
         android:textColor="@color/black"
-        android:layout_marginTop="5dp"/>
+        android:fontFamily="@font/mediumpop"
+        android:textSize="14sp" />
 
     <Button
         android:id="@+id/cardFindget"

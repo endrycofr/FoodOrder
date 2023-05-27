@@ -23,7 +23,7 @@
         android:textStyle="bold"
         android:fontFamily="@font/ikiblackpop"
         android:textSize="20sp"
-        android:textColor="@color/merah"
+        android:textColor="@color/oren"
         android:textAlignment="center"/>
 
         <androidx.recyclerview.widget.RecyclerView
@@ -159,7 +159,7 @@
             android:id="@+id/checkout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/bg_btn_red"
+            android:background="@drawable/bg_btn_yellow"
             android:text="Check out"
             android:textSize="18sp"
             android:textColor="@color/white"

@@ -3,10 +3,12 @@
     <color name="black">#1A1A1A</color>
     <color name="white">#FFFFFFFF</color>
     <color name="purple">#800080</color>
+    <color name="green">#CFF56A</color>
+    <color name="ungupastel">#9691FF</color>
     <color name="oren">#FCBA26</color>
     <color name="putihTulang">#F9F9F9</color>
     <color name="merah">#F00808</color>
     <color name="transparant">#00000000</color>
-
-
+    <color name="abu">#C7C7C7</color>
+    <color name="abutua">#A1A1A1</color>
 </resources>

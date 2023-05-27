@@ -19,12 +19,21 @@ public class Makanan1 extends AppCompatActivity {
     private int counter = 0;
     private int beli;
     private ImageButton checkoutButton;
+    private ImageButton prevButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.makanan1);
         checkoutButton= findViewById(R.id.keranjang);
         nextButton = findViewById(R.id.arrow_right);
+        prevButton = findViewById(R.id.arrow_left);
+        prevButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Makanan1.this, LoginActivity.class);
+                startActivity(intent);
+            }
+        });
 
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override

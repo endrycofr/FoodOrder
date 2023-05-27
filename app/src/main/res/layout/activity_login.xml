@@ -20,20 +20,20 @@
         android:layout_width="166dp"
         android:layout_height="149dp"
         android:layout_marginTop="60dp"
-        android:src="@drawable/taxiburger" />
+        android:src="@drawable/getstart" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="KRUSTY KRAB"
-        android:textSize="34sp"
-        android:layout_marginTop="20dp"
-        android:textColor="@color/black"
+        android:text="Login"
+        android:textSize="25sp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/oren"
         android:textStyle="bold"
         android:fontFamily="@font/boldpop"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login dan dapatkan berbagai keuntungannya"
+        android:text="Login and discover your favourite menu"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="15sp"
@@ -62,7 +62,8 @@
         android:padding="18dp"
         android:ems="10"
         android:hint="Username"
-        android:textColor="@color/black" />
+        android:textSize="14sp"
+        android:textColor="@color/abu" />
 
 </LinearLayout>
 
@@ -96,15 +97,16 @@
             android:padding="18dp"
             android:ems="10"
             android:hint="Password"
-            android:textColor="@color/black" />
+            android:textSize="14sp"
+            android:textColor="@color/abu" />
     </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonLogin"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="wrap_content"
         android:text="Login"
-        android:textSize="20sp"
+        android:textSize="16sp"
         android:textColor="@color/white"
         android:textStyle="bold"
         android:background="@drawable/btn_bg"
@@ -118,6 +120,7 @@
         android:layout_height="wrap_content"
         android:text="Don’t have an account? Sign Up"
         android:textColor="@color/black"
+        android:textAllCaps="false"
         android:textSize="14sp"
         android:layout_alignParentBottom="true"
         android:padding="10dp"
