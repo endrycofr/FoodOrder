@@ -16,7 +16,7 @@ public class Makanan1 extends AppCompatActivity {
     private static final String COUNTER_KEY = "counter";
     private ImageButton nextButton, addButton, minButton;
     private TextView jumlahPesanan;
-    private int counter;
+    private int counter = 0;
     private ImageButton checkoutButton;
     private Button addCart;
     private ImageButton prevButton;

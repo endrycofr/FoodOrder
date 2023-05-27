@@ -69,5 +69,4 @@ public class Checkout extends AppCompatActivity {
         editor.putInt(HOTDOG_KEY, hotdog);
         editor.apply();
     }
-
 }
