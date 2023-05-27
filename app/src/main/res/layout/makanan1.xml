@@ -141,7 +141,7 @@
                     tools:ignore="SpeakableTextPresentCheck"/>
 
                 <Button
-                    android:id="@+id/checkout"
+                    android:id="@+id/addToCart"
                     android:layout_width="262dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/bg_btn_yellow"

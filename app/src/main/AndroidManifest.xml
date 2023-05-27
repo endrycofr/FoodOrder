@@ -32,10 +32,8 @@
             android:label="Register"
             android:exported="false">
         </activity>
-        <activity
-            android:name=".Checkout"
-            android:label="Checkout"
-            android:exported="false">
+        <activity android:name=".Checkout" android:exported="false">
+
         </activity>
         <activity
             android:name=".MainActivity"
